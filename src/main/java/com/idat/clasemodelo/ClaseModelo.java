@@ -11,6 +11,10 @@ package com.idat.clasemodelo;
 public class ClaseModelo {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       
+        // Listar todos los estudiantes
+        System.out.println("Lista Inicial de Alumnos desde Procedimientos Almacenados:");
+        AlumnoCRUD.listarAlumnos().forEach(System.out::println);
+        
     }
 }
