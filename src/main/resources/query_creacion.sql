@@ -38,17 +38,6 @@ BEGIN
     INSERT INTO alumnos (nombre, edad, direccion, telefono) VALUES (p_nombre, p_edad, p_direccion, p_telefono);
 END //
 
-CREATE PROCEDURE ActualizarEstudiante(
-    IN id INT,
-    IN nombre VARCHAR(100),
-    IN edad INT,
-    IN direccion VARCHAR(255),
-    IN telefono VARCHAR(15)
-)
-BEGIN
-    UPDATE alumnos SET nombre = nombre, edad = edad, direccion = direccion, telefono = telefono WHERE id = id;
-END //
-
 DROP PROCEDURE IF EXISTS sp_ActualizarAlumno//
 
 CREATE  PROCEDURE sp_ActualizarAlumno(
