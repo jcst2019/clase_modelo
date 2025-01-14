@@ -10,4 +10,11 @@
         <maven.compiler.release>20</maven.compiler.release>
         <exec.mainClass>com.idat.clasemodelo.ClaseModelo</exec.mainClass>
     </properties>
+        <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version> <!-- Verifica la última versión disponible -->
+        </dependency>
+    </dependencies>
 </project>
